@@ -9,4 +9,4 @@ COPY build/libs/uplog-0.0.1-SNAPSHOT.jar /app/uplog-0.0.1-SNAPSHOT.jar
 COPY src/main/resources/application.yml /app/application.yml
 
 # 컨테이너 내에서 실행할 명령어 설정
-CMD ["java", "-jar", "uplog-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "uplog-0.0.1-SNAPSHOT.jar", "--spring.config.location=file:/app/application.yml"]
