@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/uplog?
+    url: jdbc:mysql://130.162.144.221:3306/uplog?
       createDatabaseIfNotExist=true
       &useUnicode=true&characterEncoding=UTF-8
       &characterSetResults=UTF-8
