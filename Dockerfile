@@ -9,5 +9,6 @@ COPY build/libs/uplog-0.0.1-SNAPSHOT.jar /app/uplog-0.0.1-SNAPSHOT.jar
 
 COPY build/resources/main/application.yml /app/config/application.yml
 
+COPY .gradle/caches/modules-2/files-2.1/com.mysql/mysql-connector-j/8.0.33/9e64d997873abc4318620264703d3fdb6b02dd5a/mysql-connector-j-8.0.33.jar /app/lib/mysql-connector-java-8.0.33.jar
 # 컨테이너 내에서 실행할 명령어 설정
 CMD ["java", "-jar", "uplog-0.0.1-SNAPSHOT.jar", "--spring.config.location=file:/app/application.yml"]
