@@ -5,7 +5,7 @@ FROM openjdk:11
 WORKDIR /app
 
 # 호스트 머신의 현재 디렉토리에 있는 uplog.jar 파일을 컨테이너의 /app 디렉토리로 복사
-COPY build/libs/uplog-0.0.1-SNAPSHOT.jar /app/uplog-0.0.1-SNAPSHOT.jar
+#COPY build/libs/uplog-0.0.1-SNAPSHOT.jar /app/uplog-0.0.1-SNAPSHOT.jar
 
 COPY src/main/resources/application.yml /app/config/application.yml
 
