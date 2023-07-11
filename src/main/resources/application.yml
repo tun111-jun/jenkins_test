@@ -12,7 +12,7 @@ spring:
 
     username: root
     password: 153351
-    driver-class-name: com.mysql.jdbc.Driver
+    #driver-class-name: com.mysql.jdbc.Driver
 
   jpa:
     hibernate:
