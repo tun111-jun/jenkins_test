@@ -8,4 +8,5 @@ WORKDIR /app
 COPY build/libs/uplog-0.0.1-SNAPSHOT.jar /app/uplog-0.0.1-SNAPSHOT.jar
 
 # 컨테이너 내에서 실행할 명령어 설정
-CMD ["java", "-jar", "uplog-0.0.1-SNAPSHOT.jar"]
+#CMD ["java", "-jar", "uplog-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/uplog-0.0.1-SNAPSHOT.jar"]
