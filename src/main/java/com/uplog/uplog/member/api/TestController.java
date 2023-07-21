@@ -37,4 +37,10 @@ public class TestController {
         testRepository.save(testcreate);
         return "Hello this is test";
     }
+    @GetMapping("/test{testt}")
+    public String testtwo(@PathVariable("testt")Long str) {
+
+
+        return "Hello";
+    }
 }
