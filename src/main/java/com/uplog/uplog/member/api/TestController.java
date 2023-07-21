@@ -37,7 +37,7 @@ public class TestController {
         testRepository.save(testcreate);
         return "Hello this is test";
     }
-    @GetMapping("/dsfe/{testt}")
+    @GetMapping("/test/sdfef/{testt}")
     public String testtwo(@PathVariable("testt")Long str) {
 
 
