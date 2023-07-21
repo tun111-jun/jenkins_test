@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://mysql-container:3306/uplog
+    url: jdbc:mysql://172.21.0.3:3306/uplog
 
     username: root
     password: 153351
