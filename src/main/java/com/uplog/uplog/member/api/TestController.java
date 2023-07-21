@@ -19,7 +19,7 @@ public class TestController {
     private final TestRepository testRepository;
 
     // summary -> api 내용(기능) description -> 세부 설명 tag -> 그룹 (도메인 별 컨트롤러 이름)
-    @Operation(summary = "테스트 요청", description = "설명", tags = { "Member Controller" })
+    @Operation(summary = "테스트 요청-2", description = "설명", tags = { "Member Controller" })
     // response 코드 별로 응답 시 내용(설명) 작성
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "OK",
