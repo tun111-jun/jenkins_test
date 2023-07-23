@@ -9,5 +9,5 @@ ARG JAR_FILE=target/*.jar
 COPY build/libs/uplog-0.0.1-SNAPSHOTONE.jar /app/uplog-0.0.1-SNAPSHOTONE.jar
 
 # 컨테이너 내에서 실행할 명령어 설정
-#CMD ["java", "-jar", "uplog-0.0.1-SNAPSHOT.jar"]
-ENTRYPOINT ["java", "-jar","/uplog-0.0.1-SNAPSHOTONE.jar"]
+CMD ["java", "-jar", "uplog-0.0.1-SNAPSHOTONE.jar"]
+#ENTRYPOINT ["java", "-jar","/uplog-0.0.1-SNAPSHOTONE.jar"]
